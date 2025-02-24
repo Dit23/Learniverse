@@ -1,0 +1,120 @@
+.quiz {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0 auto 10px;
+}
+
+.quiz h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.quiz .questions {
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.quiz .questions button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quiz .questions button:hover {
+    background: #f0f0f0;
+}
+
+.quiz .questions button.selected {
+    background: #d0eaff;
+    border-color: #007bff;
+}
+
+.quiz .questions button.correct {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+.quiz .questions button.incorrect {
+    background: #f8d7da;
+    border-color: #dc3545;
+}
+
+.quiz .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz .nav button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quiz .nav button:hover {
+    background: #0056b3;
+}
+
+.quiz .nav button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.quiz .results h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.quiz .results .question {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.quiz .results .question p {
+    margin: 5px 0;
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.quiz .results .question p:first-child {
+    background: transparent;
+    font-weight: bold;
+}
+
+.quiz .results .question p.correct {
+    color: #28a745;
+}
+
+.quiz .results .incorrect .question p.incorrect {
+    color: #dc3545;
+}
+
+.quiz details {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.quiz details summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
