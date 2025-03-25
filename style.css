@@ -1,12 +1,48 @@
 h1 {
     text-align: center;
+    font-style: normal;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.content {
+    max-width: 1500px;
+    margin: auto;
 }
 
 .test {
     color: #d6baff;
+    text-align: center;
 }
 
 body {
     background-image: url("https://wallpapers.com/images/hd/fortnite-galaxy-3840-x-2160-3xzenq2vlmiiv71o.jpg");
+    background-attachment: fixed;
+}
 
+.feacher {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 16px;
+}
+
+.feacher img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+
+.feacher img:hover {
+    transform: scale(1.05);
 }
