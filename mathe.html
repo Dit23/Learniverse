@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+            });
+        });
+    </script>
+
     <meta charset="UTF-8">
     <title>Mathe</title>
     <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="quiz/quiz.css">
+    <script src="quiz/quiz.js"></script>
 </head>
 <body>
 <h3 class="überschrift">
@@ -26,22 +50,22 @@
         Beispiel: Kurvendiskussion einer Funktion
         <div class="schrift">
             Gegeben sei die Funktion <br>
-            f(x)=x^3−6x^2+9x+1 <br>
+            $$f(x)=x^3−6x^2+9x+1$$ <br>
             Schritt 1: Erste Ableitung berechnen <br>
-            f′(x)=3x^2−12x+9. <br>
+            $$f'(x)=3x^2−12x+9.$$ <br>
             Schritt 2: Kritische Punkte ermitteln <br>
-            setze f′(x)=0 <br>
-            →	x1 = 1; x2 = 3 <br>
+            setze$$ f'(x)=0$$ <br>
+            $$→	x_1 = 1; x_2 = 3$$ <br>
             Schritt 3: Zweite Ableitung berechnen <br>
-            →	f′′(x)=6x−12. <br>
+            →$$	f''(x)=6x−12.$$ <br>
             Schritt 4: Art der Extrempunkte bestimmen <br>
             Für x=1 <br>
-            →	f′′ (1) =6⋅1−12=−6(negative Krümmung ⇒ lokales Maximum). <br>
-            Für x=3 <br>
-            →	f′′ (3) =6⋅3−12=6(positive Krümmung ⇒ lokales Minimum). <br>
+            →$$	f'' (1) =6⋅1−12=−6 $$(negative Krümmung ⇒ lokales Maximum). <br>
+            für $$ x = 3 $$<br>
+            →$$	f'' (3) = 6⋅3−12 = 6 $$(positive Krümmung ⇒ lokales Minimum). <br>
             Schritt 5: Wendepunkt ermitteln <br>
-            setze f"(x)=0f <br>
-            →	6x−12=0 ⇒ x=2 <br>
+            setze $$ f''(x)= 0 $$<br>
+            →$$	6x−12=0 ⇒ x=2 $$<br>
             Überprüfe das Krümmungsverhalten um x=2, um den Wendepunkt zu bestätigen. <br>
             Ergebnis: <br>
             •	Lokales Maximum bei x=1 <br>
@@ -56,7 +80,7 @@
             <div class="thema">
                 Hilfestellung: <br>
                 <div class="schrift">
-                → Funktionsableitung ermittle f′(x) und setze sie gleich null, um Kandidaten für Extrempunkte zu finden. <br>
+                → Funktionsableitung ermittle f'(x) und setze sie gleich null, um Kandidaten für Extrempunkte zu finden. <br>
                 → Randwerte berücksichtigen: Bei Aufgaben im geschlossenen Intervall sollten auch die Funktionswerte an den Intervallgrenzen geprüft werden. <br>
                 → Vergleich der Werte: Bestimme das größte und kleinste Funktionsresultat, um globale Extrema zu identifizieren. <br>
                 </div>
@@ -69,21 +93,25 @@
                     Beispiel: Extremwertaufgabe <br>
                     <div class="schrift">
                         Gegeben sei <br>
-                        →	f(x) = x^3 – 6x^2 + 9x + 1 <br>
+                        →$$	f(x) = x^3 – 6x^2 + 9x + 1 $$<br>
                         auf dem Intervall [0; 4] <br>
                         <b>
+                            <br>
                             Lösungsschritte: <br>
+                            <br>
                             1. Kritische Punkte ermitteln
                         </b>
-                        setze f′(x)=0 <br>
-                        →	x1 = 1; x2 = 3 <br>
+                        <br>
+                        setze$$ f'(x)=0 $$<br>
+                        →$$	x_1 = 1 ; x_2 = 3 $$<br>
                         <b>
                             2. Funktionswerte berechnen: <br>
                         </b>
-                        f(1) = 5 ; f(3) = 1 <br>
+                        $$f(1) = 5 ; f(3) = 1 $$<br>
                         <b>
                             3. Ergebnis interpretieren: <br>
                         </b>
+                        <br>
                         •	Das globale Maximum ist 5 (bei x=1 und x=4). <br>
                         •	Das globale Minimum ist 1 (bei x=0 und x=3). <br>
                     </div>
@@ -93,27 +121,67 @@
                 Beispiel: Stammfunktion finden
                 <div class="schrift">
                     Finde die Stammfunktion von <br>
-                    f(x)=3x^2+2x−5. <br>
+                    $$ f(x)=3x^2+2x−5. $$<br>
                     <b>
                         Lösungsschritte: <br>
                     </b>
-                    1.	Integriere jeden Term einzeln: <br>
+                    <br>
+                    1.	Integriere jeden einzeln Term: <br>
                     <div class="absatz">
-                        o	∫ 3x^2  dx = 3 * x^3/3 = x^3 <br>
-                        o	∫ 2x  dx = 2 * x^2/2 = x^2 <br>
-                        o	∫ (−5)  dx = −5x <br>
+                       $$1.	∫ 3x^2  dx = 3⋅x^3/3 = x^3 $$<br>
+                       $$2.	∫ 2x  dx = 2⋅x^2/2 = x^2 $$<br>
+                       $$3.	∫ (−5)  dx = −5x $$<br>
                     </div>
-                    F(x)=x3+x2−5x+C.
+                    $$ F(x)=3x+2x−5x+C$$
                 </div>
             </div>
         </div>
 </div>
 
-
-
 <br>
-<div class="schrift">
-    <a href="quiz/example.html">Quiz</a>
-</div>
+<div id="matheQuiz"></div>
+
+<script>
+    new Quiz("matheQuiz",
+        [
+            {
+                question: "Was ist 10 + 4?",
+                answers: [
+                    { text: '12', correct: false },
+                    { text: '14', correct: true },
+                    { text: '16', correct: false },
+                    { text: '18', correct: false }
+                ]
+            },
+            {
+                question: "Was ist 20 - 9?",
+                answers: [
+                    { text: '7', correct: false },
+                    { text: '13', correct: false },
+                    { text: '11', correct: true },
+                    { text: '9', correct: false }
+                ]
+            },
+            {
+                question: "Was ist 7 x 3?",
+                answers: [
+                    { text: '21', correct: true },
+                    { text: '24', correct: false },
+                    { text: '25', correct: false },
+                    { text: '27', correct: false }
+                ]
+            },
+            {
+                question: "Was ist 8 / 2?",
+                answers: [
+                    { text: '10', correct: false },
+                    { text: '2', correct: false },
+                    { text: '4', correct: true },
+                    { text: '6', correct: false }
+                ]
+            }
+        ]
+    );
+</script>
 </body>
 </html>

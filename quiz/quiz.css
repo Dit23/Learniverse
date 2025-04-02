@@ -1,5 +1,5 @@
 .quiz {
-    background: rgb(255, 255, 255);
+    background: rgba(129, 38, 38, 0);
     border: 1px solid #ccc;
     border-radius: 5px;
     max-width: 600px;
@@ -11,14 +11,16 @@
 .quiz h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
 }
 
 .quiz .questions {
     margin-bottom: 20px;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    color: #ffffff;
 }
 
 .quiz .questions button {
@@ -30,10 +32,11 @@
     background: #fff;
     cursor: pointer;
     transition: background 0.3s;
+    color: #ffffff;
 }
 
 .quiz .questions button:hover {
-    background: #f0f0f0;
+    background: rgb(207, 202, 228);
 }
 
 .quiz .questions button.selected {
@@ -84,6 +87,7 @@
 .quiz .results .question {
     margin-bottom: 15px;
     padding: 10px;
+    color: #ffffff;
 }
 
 .quiz .results .question p {
