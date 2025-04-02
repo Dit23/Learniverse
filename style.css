@@ -1,16 +1,21 @@
 h1 {
     text-align: center;
     font-style: normal;
-    font-size: 60px;
+    font-size: 120px;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-family:"Edwardian Script ITC", cursive;
+    font-weight: bold;
 }
-h2{
-    font-size: 30px;
-    font-style: italic;
+h2 {
+    font-size: 50px;
+    font-style: normal;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: "Snap ITC", normal, sans-serif;
+    font-weight: normal;
+
 }
 
 .content {
@@ -21,6 +26,7 @@ h2{
 .test {
     color: #d6baff;
     text-align: center;
+
 }
 
 body {
@@ -41,8 +47,57 @@ body {
     height: 100%;
     border-radius: 10px;
     transition: transform 0.4s;
+    margin-top: 20px;
 }
 
 .feacher img:hover {
     transform: scale(1.05);
+}
+
+h3 {
+    color: rgb(193, 144, 255);
+    text-align: left;
+    font-size: 80px;
+    margin-top: 50px;
+    font-weight: bold;
+
+}
+
+.unterüberschrift{
+    color: rgb(216, 180, 255);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.schrift{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+
+
+}
+
+.thema{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border: 2px solid rgba(240, 228, 255, 0.95);
+    padding: 5px;
+
+
+}
+
+.absatz{
+    padding: 5px;
+
+}
+
+h6{
+    margin-top: auto;
+    margin-bottom: auto;
 }
