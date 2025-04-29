@@ -6,6 +6,8 @@
     padding: 20px;
     font-family: Arial, sans-serif;
     margin: 0 auto 10px;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 .quiz h2 {
@@ -32,7 +34,6 @@
     background: #fff;
     cursor: pointer;
     transition: background 0.3s;
-    color: #ffffff;
 }
 
 .quiz .questions button:hover {
@@ -95,6 +96,7 @@
     background: #f0f0f0;
     padding: 5px;
     border-radius: 5px;
+    color: #ffffff;
 }
 
 .quiz .results .question p:first-child {
@@ -120,5 +122,6 @@
 .quiz details summary {
     cursor: pointer;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
+    color: #ffffff;
 }
